@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./index.css";
 import hangmanImages from "./data";
 import data from "./lettersData.js";
-import letter from "./letter.jsx";
+import Letter from "./letter.jsx";
 
 function App() {
   const [images, setImage] = useState(hangmanImages);
@@ -26,6 +26,11 @@ function App() {
         ))}
       </div>
       <span className="category-span">Guess the MOVIE:</span>
+      <ul className="letters-list">
+        {letters.map((letter) => (
+          <Letter key={letter.id} id={letter.id} letter={letter.letter} />
+        ))}
+      </ul>
     </>
   );
 }

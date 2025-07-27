@@ -65,4 +65,35 @@ header {
   display: block;
   width: 100%;
   text-align: center;
+  margin-bottom: 20rem;
+}
+
+.letters-list {
+  list-style-type: none;
+  padding-left: 0;
+  width: 800rem;
+  margin: 0 auto 48rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+}
+
+li {
+  background-color: rgb(61, 242, 182);
+  font-size: 35rem;
+  font-weight: bold;
+  border-radius: 12rem;
+  width: 70rem;
+  height: 70rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: rgb(208, 247, 234);
 }

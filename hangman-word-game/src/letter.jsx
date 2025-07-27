@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function letter({ id, letter, onClick }) {
+function Letter({ id, letter, onClick }) {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
@@ -10,4 +10,4 @@ function letter({ id, letter, onClick }) {
   );
 }
 
-export default letter;
+export default Letter;
