@@ -65,7 +65,7 @@ header {
   display: block;
   width: 100%;
   text-align: center;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 }
 
 .letters-list {
@@ -96,4 +96,12 @@ li {
 li:hover {
   cursor: pointer;
   background-color: rgb(208, 247, 234);
+}
+
+.word-display {
+  color: white;
+  text-align: center;
+  font-size: 40rem;
+  margin-bottom: 10rem;
+  font-weight: bold;
 }
