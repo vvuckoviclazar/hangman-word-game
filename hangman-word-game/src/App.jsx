@@ -3,6 +3,7 @@ import "./index.css";
 import hangmanImages from "./data";
 import data from "./lettersData.js";
 import Letter from "./letter.jsx";
+import Btn from "./btn.jsx";
 
 const words = [
   "BATMAN",
@@ -16,6 +17,8 @@ const words = [
   "TITANIC",
   "ROCKY",
 ];
+
+const alphabet = "ABCD...";
 
 const getRandomWord = () => words[Math.floor(Math.random() * words.length)];
 
@@ -66,6 +69,24 @@ function App() {
           />
         ))}
       </ul>
+      <div className="modal">
+        <div className="overlay">
+          <div className="modal-content">
+            <h1 className="modal-h1">Chose Mode:</h1>
+            <div className="chose-mode-div">
+              <Btn>EASY</Btn>
+              <Btn>HARD</Btn>
+            </div>
+            <h1 className="modal-h1">Chose Category to start the game:</h1>
+            <div className="chose-category-div">
+              <Btn>MOVIE</Btn>
+              <Btn>TVSHOW</Btn>
+              <Btn>COUNTRY</Btn>
+              <Btn>ANIMAL</Btn>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

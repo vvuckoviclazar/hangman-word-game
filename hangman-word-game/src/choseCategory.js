@@ -24,4 +24,13 @@ const choseCategory = [
     isActive: false,
   },
 ];
+
+const bla = ["movies", "tvshows", "animals"];
+const selectedCategory = bla[0];
+
+const categories = {
+  movies: ["BATMAN", "INCEPTION", "GLADIATOR", "AVATAR", "TITANIC"],
+};
+
+categories["tvshows"];
 export default choseCategory;

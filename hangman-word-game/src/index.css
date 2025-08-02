@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #1d161b;
+  background-color: #171316;
   font-family: sans-serif;
 }
 
@@ -104,4 +104,64 @@ li:hover {
   font-size: 40rem;
   margin-bottom: 10rem;
   font-weight: bold;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(18rem);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100rem;
+}
+
+.overlay {
+  background-color: transparent;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.chose-mode-div,
+.chose-category-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+
+.chose-mode-div {
+  margin-bottom: 15rem;
+}
+
+.modal-h1 {
+  margin-bottom: 15rem;
+  color: white;
+  font-size: 25rem;
+}
+
+.modal-btns {
+  color: #1d161b;
+  border: none;
+  font-size: 27rem;
+  font-weight: 600;
+  background-color: yellow;
+  padding: 10rem 55rem 10rem 55rem;
+  border-radius: 12rem;
+  transition: background-color 0.3s ease;
+}
+
+.modal-btns:hover {
+  cursor: pointer;
+  background-color: yellowgreen;
 }
