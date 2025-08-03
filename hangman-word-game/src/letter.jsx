@@ -1,10 +1,10 @@
-import { useState } from "react";
-
-function Letter({ id, letter, onClick }) {
-  const [isClicked, setIsClicked] = useState(false);
-
+function Letter({ id, letter, onClick, clicked, correct }) {
   return (
-    <li id={id} onClick={onClick}>
+    <li
+      id={id}
+      onClick={!clicked ? onClick : undefined}
+      className={`letter ${clicked ? (correct ? "correct" : "wrong") : ""}`}
+    >
       {letter}
     </li>
   );

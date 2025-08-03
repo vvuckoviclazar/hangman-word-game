@@ -30,6 +30,10 @@ header {
 .header-p {
   color: blue;
   font-size: 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
 }
 
 .change-btn {
@@ -79,8 +83,8 @@ header {
   justify-content: center;
 }
 
-li {
-  background-color: rgb(61, 242, 182);
+.letter {
+  background-color: aquamarine;
   font-size: 35rem;
   font-weight: bold;
   border-radius: 12rem;
@@ -88,14 +92,25 @@ li {
   height: 70rem;
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-li:hover {
-  cursor: pointer;
-  background-color: rgb(208, 247, 234);
+.letter:hover {
+  background-color: rgb(31, 180, 130);
+}
+
+.letter.correct {
+  background-color: #006bc3;
+  pointer-events: none;
+  color: rgba(240, 255, 255, 0.672);
+}
+
+.letter.wrong {
+  background-color: red;
+  pointer-events: none;
+  color: rgba(240, 255, 255, 0.672);
 }
 
 .word-display {
@@ -164,4 +179,44 @@ li:hover {
 .modal-btns:hover {
   cursor: pointer;
   background-color: yellowgreen;
+}
+
+.reset-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-btn {
+  color: #1d161b;
+  border: none;
+  font-size: 25rem;
+  font-weight: 600;
+  background-color: aquamarine;
+  padding: 20rem;
+  border-radius: 15rem;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  cursor: pointer;
+  background-color: rgb(31, 180, 130);
+}
+
+.end-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  color: gold;
+  font-weight: 300;
+  font-size: 25rem;
+  margin-bottom: 10rem;
+}
+
+.red-timer {
+  color: red;
+  padding-top: 5rem;
 }

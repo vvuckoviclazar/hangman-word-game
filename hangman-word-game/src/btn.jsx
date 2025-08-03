@@ -1,10 +1,7 @@
-function Btn({ children, onClick }) {
+function Btn({ children, onClick, style }) {
   const baseClass = "modal-btns";
-
-  const finalClass = `${baseClass} `;
-
   return (
-    <button className={finalClass} onClick={onClick}>
+    <button className={baseClass} onClick={onClick} style={style}>
       {children}
     </button>
   );
